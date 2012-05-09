@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<title>纸牌记忆游戏</title>
+	<link href='http://fonts.googleapis.com/css?family=Handlee' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="game.css"/>
+</head>
+
+<body>
+	<audio id="soundOver">
+		<source src="sounds/over.wav"/>
+		<source src="sounds/over.ogg"/>
+	</audio>
+	<audio id="soundActive">
+		<source src="sounds/active.mp3"/>
+		<source src="sounds/active.ogg"/>
+	</audio>
+
+	<header>
+		<h1>CSS3纸牌记忆游戏</h1>
+	</header>
+
+	<section id="gameTable">
+		<div id="cards">
+			<div class="card">
+				<div class="face front"></div>
+				<div class="face back"></div>
+			</div>
+		</div>
+	</section>
+	
+	<footer>
+		<h3>练习使用html5+CSS3制作2D游戏. Hao.Wu</h3>
+	</footer>
+</body>
+
+	<script type="text/javascript" src="jquery-1.7.2.js"></script>
+	<script type="text/javascript" src="game.js"></script>
+
+</html>

@@ -1,0 +1,88 @@
+/*
+	CSS File for the game
+*/
+
+body {
+	text-align:center;
+	background: #a46740 url(images/bg.jpg);
+	color: #DDD;
+	font-family: 'Handlee', cursive; /*web fonts*/
+}
+
+#gameTable {
+	border-radius: 10px;
+	border: 1px solid #666;
+
+	position:relative;
+	background: #233 url(images/table.jpg);
+	width: 500px;
+	height:460px;
+	margin: 0 auto;
+
+	display: -webkit-box;
+	-webkit-box-pack: center;
+	-webkit-box-align: center;
+	-webkit-box-shadow: 3px 3px 6px rgba(140,90,90,1);
+}
+
+#cards {
+	position: relative;
+	width: 380px;
+	height: 400px;
+}
+
+.card {
+	width: 80px;
+	height: 120px;
+	position: absolute;
+	-webkit-transition: all .5s;
+}
+
+.face {
+	border-radius:10px;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+
+	-webkit-transition-property: opacity, -webkit-transform, -webkit-box-shadow;
+	-webkit-transition-duration: .5s;
+	-webkit-backface-visibility: hidden;
+}
+
+.front {
+	background: url(images/deck.png) 0 -480px;
+	z-index: 10;
+}
+
+.back {
+	background: url(images/deck.png);
+	-webkit-transform: rotate3d(0,1,0, -180deg);
+	z-index: 8;
+}
+
+.card:hover .face {
+	-webkit-box-shadow: 0 0 20px #aaa;
+}
+
+.flipped .face{
+	-webkit-box-shadow: 0 0 20px #aaa;
+}
+.flipped .front{
+	-webkit-transform: rotate3d(0,1,0, 180deg);
+	z-index:8;
+}
+.flipped .back{
+	-webkit-transform: rotate3d(0,1,0, 0deg);
+	z-index:10;
+}
+
+.removed {
+	opacity:0;
+}
+
+.J1{background-position: -800px 0;}
+.Q1{background-position: -880px 0;}
+.K1{background-position: -960px 0;}
+.J2{background-position: -800px -120px;}
+.Q2{background-position: -880px -120px;}
+.K2{background-position: -960px -120px;}

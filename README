@@ -1,0 +1,2 @@
+使用HTML5+CSS3+jQuery编写的纸牌小游戏。
+纸牌动画使用CSS3，音效使用HTML Audio标签，计划下一步使用Canvas来制作更复杂的动画效果。
